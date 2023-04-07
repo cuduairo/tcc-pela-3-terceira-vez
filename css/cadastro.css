@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2? family= Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200; 1.300;1.400;1.500;1.600;1.700;1.800;1.900 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.form-cadastro {
+    border: 1px solid transparent;
+    transition: 0.5s;
+}
+
+.form-cadastro:hover {
+    border-bottom: 1px solid rgb(187, 11, 11);
+    transition: 0.5s;
+}
+
+.form-cadastro:focus {
+    border-bottom: 1px solid rgb(150, 18, 18);
+    transition: 0.5s;
+}
+
+.form-cads.form-control {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.btn-form {
+    background: rgb(150, 18, 18);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3vh;
+    transition: all 0.5s;
+    padding: 10px 10px;
+}
+
+.btn-form:hover {
+    background: rgb(100, 12, 12);
+    color: white;
+    transition: all 0.5s;
+}
