@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/sobrenos.css">
+    <script>
+        function initMap() {
+          var localizacao = {lat: -23.5489, lng: -46.6388}; // coordenadas da localização
+          var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 15, // nível de zoom
+            center: localizacao // centro do mapa
+          });
+          var marker = new google.maps.Marker({
+            position: localizacao, // posição do marcador
+            map: map // mapa em que o marcador deve ser exibido
+          });
+        }
+        </script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-nav fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><b class="logo">Empre</b><b>Tec</b></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExample07">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" id="btn-nav" href="index.html">Home <span class="sr-only">(atual)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="btn-nav2" href="#">Sobre nós</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="btn-nav2" href="#">Empresas Parceiras</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="nav-link mr-1"><a class="btn btn-login" href="login.html" role="button">Log-in</a></li>
+                    <li class="nav-link"><a class="btn btn-login" href="cadastro.html" role="button">Cadastrar</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container marketing">
+        <span class="d"><h2>Sobre Nós</h2></span>
+    <div class="conteiner">
+        <div class="row">
+            <div class="col-12 col-md-12 col-sm-12">
+                <br>
+                <h5 class="quem-somos">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat rem excepturi neque adipisci molestiae omnis. Nam molestiae, sapiente id dolore obcaecati, autem, velit sed necessitatibus error in recusandae soluta ipsa Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit. Placeat, incidunt consequatur. Error, id? Odio, quam. Ipsum, autem? Odit officia quibusdam quisquam maxime ipsa, a cupiditate similique, repudiandae, culpa libero tenetur? Lorem ipsum
+                    dolor sit, amet consectetur adipisicing elit. Culpa doloremque iste iure vel eligendi, in exercitationem dolore dolorem! Impedit rerum soluta pariatur labore laboriosam eum doloribus voluptatibus eveniet placeat minima? Lorem ipsum
+                    dolor sit amet consectetur, adipisicing elit. Consectetur impedit autem explicabo vel in eveniet asperiores, est, eligendi voluptatem quia distinctio corrupti, saepe voluptatibus nihil sequi inventore veniam velit accusamus? Lorem,
+                    ipsum dolor sit amet consectetur adipisicing elit. Vel doloribus modi minus, tenetur voluptates et optio vero odio hic ratione, temporibus corrupti, aliquid natus culpa blanditiis magni nisi? Exercitationem, explicabo? Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit. Id sit illum cumque expedita, amet, eius labore suscipit doloribus earum eveniet provident ab beatae distinctio maxime vitae quod repellat porro. Eum.</h5>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="container marketing">
+        <span class="d"><h2>Onde residimos</h2></span>
+    <div class="conteiner">
+        <div class="container-fluid ">
+            <div class="row text-center ">
+                <div class="col-12 col-sm-6 col-md-4 ">
+                    <i class="fa-solid fa-location-dot" id="cont"></i>
+                    <h3 class="contato ">Nosso Endereço</h3>
+                    <p class="inf ">Rua São Pedro, 330, Vila Perin. Lins/SP</p>
+                    <div id="map"></div>
+                </div>
+                <script src="https://maps.googleapis.com/maps/api/js?key=SUA_CHAVE_DE_API"></script>
+</body>
+</html>

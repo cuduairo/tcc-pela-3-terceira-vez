@@ -115,3 +115,21 @@
         text-decoration: none;
         font-size: 2vh;
     }
+
+    .bg-bord {
+        border-radius: 50%; 
+    }
+    .btn-botao{
+        color: #fffffe;
+        background: #941510;
+
+    }
+    .btn-primary{
+        color: #fffffe;
+        background: #941510;
+
+    }
+        
+
+    
+     
